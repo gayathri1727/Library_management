@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
-import axios from "axios";
+import axios, { API_BASE } from "./api";
 import "./index.css";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+const API = API_BASE;
 
 const emptyBook = {
   title: "",
